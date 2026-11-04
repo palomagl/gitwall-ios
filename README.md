@@ -2,15 +2,37 @@
 
 # GitWall iOS
 
-**Suas contribuições do GitHub na tela bloqueada do iPhone.**
+### Seu GitHub na tela bloqueada. Atualizado automaticamente.
 
-Papel de parede gerado com dados públicos do GitHub, com atualização programada pelo app Atalhos — **sem precisar de espaço no iCloud**.
+Transforme suas contribuições públicas do GitHub em um wallpaper para iPhone: quadradinhos verdes, fundo azul e atualização programada — **sem iCloud e sem precisar manter o computador ligado**.
 
-<img src="assets/wallpaper-preview.svg" alt="Wallpaper GitWall real em um iPhone 11: gráfico anual de contribuições verdes sobre fundo azul" width="290" />
+<br/>
 
-<sub>Prévia do visual no iPhone 11 • a imagem real é gerada com as contribuições de cada pessoa.</sub>
+<img src="assets/wallpaper-real.jpg" alt="Captura real da tela bloqueada de um iPhone 11 com GitWall: fundo azul, relógio nativo e quadradinhos de contribuições verdes" width="285" />
+
+<br/>
+
+<sub>Captura real no iPhone 11 · Perfil @palomagl · 722 contribuições na data da foto</sub>
+
+<br/><br/>
+
+**[Começar instalação](#instalação--passo-a-passo)** &nbsp;·&nbsp; **[Ver o código](script/gitwall.js)** &nbsp;·&nbsp; **[Configurar atualização automática](#3-atualizar-automaticamente-todos-os-dias)**
 
 </div>
+
+---
+
+## O projeto em 3 passos
+
+| 01 · Scriptable | 02 · Atalhos | 03 · Automação |
+| :---: | :---: | :---: |
+| Gera o wallpaper com seus dados do GitHub | Decodifica a imagem e aplica na tela bloqueada | Atualiza diariamente no horário escolhido |
+
+<div align="center">
+<img src="assets/atalho-configurado.svg" width="590" alt="Diagrama: Scriptable, Decodificar Base64 e Definir Imagem de Fundo na Tela Bloqueada"/>
+</div>
+
+> **Importante:** o wallpaper não atualiza instantaneamente após cada commit. Ele é atualizado quando a automação é executada. Esta versão foi testada no **iPhone 11**; outros modelos podem precisar de ajustes no layout.
 
 ## Como funciona
 
@@ -126,6 +148,6 @@ JavaScript · Scriptable · iOS Shortcuts · GitHub Contributions
 
 ## Créditos
 
-Projeto e documentação: [@palomagl](https://github.com/palomagl). O wallpaper demonstrado foi gerado a partir do perfil da autora.
+Projeto e documentação: [@palomagl](https://github.com/palomagl). A imagem acima é uma captura real da tela bloqueada da autora. O resultado varia conforme as contribuições de cada pessoa.
 
 Código aberto sob a licença [MIT](LICENSE). Este projeto é independente e não é afiliado ao GitHub ou à Apple.
